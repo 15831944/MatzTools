@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mission2shp", "mission2shp\mission2shp.csproj", "{089DA464-B69F-44F7-8702-F95752469379}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{33E2B617-C223-41B8-80B3-5DB4CE97D1BB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "cloud2tin", "cloud2tin\cloud2tin.pyproj", "{F429E5A7-BD07-4581-9240-5408969E0409}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{089DA464-B69F-44F7-8702-F95752469379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089DA464-B69F-44F7-8702-F95752469379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089DA464-B69F-44F7-8702-F95752469379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089DA464-B69F-44F7-8702-F95752469379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F429E5A7-BD07-4581-9240-5408969E0409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F429E5A7-BD07-4581-9240-5408969E0409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{089DA464-B69F-44F7-8702-F95752469379} = {33E2B617-C223-41B8-80B3-5DB4CE97D1BB}
+		{F429E5A7-BD07-4581-9240-5408969E0409} = {33E2B617-C223-41B8-80B3-5DB4CE97D1BB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A0E2019-8C11-4481-94D0-AF9D39FDA954}
+	EndGlobalSection
+EndGlobal
