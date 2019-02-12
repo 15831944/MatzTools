@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mission2shp", "mission2shp\mission2shp.csproj", "{089DA464-B69F-44F7-8702-F95752469379}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{33E2B617-C223-41B8-80B3-5DB4CE97D1BB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{33E2B617-C223-41B8-80B3-5DB4CE97D1BB}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "cloud2tin", "cloud2tin\cloud2tin.pyproj", "{F429E5A7-BD07-4581-9240-5408969E0409}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{2E4C25B7-1754-4ABF-8E22-A548278E0849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

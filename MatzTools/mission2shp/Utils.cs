@@ -14,11 +14,14 @@ namespace mission2shp
             bool argOK = false;
             int check = 0;
 
+            if (args.Length != 6)
+                return false;
+
             try
             {
-                for (int i= 0; i < args.Length; i++)
-            {
-                    switch(args[i])
+                for (int i = 0; i < args.Length; i++)
+                {
+                    switch (args[i])
                     {
                         case "-i":
                             _in = args[i + 1];
@@ -38,9 +41,9 @@ namespace mission2shp
                             check += 100;
                             break;
                     }
+                }
                     if (check == 111)
                         argOK = true;
-                }
             }
             catch { }
             return argOK;

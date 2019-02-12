@@ -33,7 +33,7 @@ namespace mission2shp
 
             if (!Utils.ChkArgs(args, ref _in, ref _sr, ref _out))
             {
-                Console.WriteLine("****    mission2shp    ****");
+                Console.WriteLine("****    mission2shp    ****    /co(2019) DI Rudolf Matzeder");
                 Console.WriteLine("Befehlszeilenargumente:");
                 Console.WriteLine("   -i: Input File, Mission Planner Polygon File (usually *.poly)");
                 Console.WriteLine("  -cs: EPSG code of coordinate system");
@@ -47,12 +47,11 @@ namespace mission2shp
 
             OSGeo.OGR.Driver driver = Ogr.GetDriverByName("ESRI Shapefile");
 
-            _in = Path.Combine(Environment.CurrentDirectory, _in);
+           // _in = Path.Combine(Environment.CurrentDirectory, _in);
 
                 //Konsole
                 Console.WriteLine(" -i: " + _in);
-                string wkt;
-                _sr.ExportToPrettyWkt(out wkt, 0);
+                _sr.ExportToPrettyWkt(out string wkt, 0);
                 Console.WriteLine("-cs: " + wkt);
                 Console.WriteLine(" -o:" + _out);
 
@@ -72,8 +71,11 @@ namespace mission2shp
             try
             {
                 string path = Path.GetDirectoryName(_in);
+                if (path == String.Empty)
+                    path = Directory.GetCurrentDirectory();
                 string datei = Path.GetFileName(_in);
                 string[] files = Directory.GetFiles(path, datei);
+                int cntFeatures = 0;
 
                 foreach (string file in files)
                 {
@@ -91,8 +93,10 @@ namespace mission2shp
                         feature.SetField("Block", Block);
 
                         ly.CreateFeature(feature);
+                        cntFeatures++;
                     }
                 }
+                    Console.WriteLine("generierte Features: " + cntFeatures);
             }
             catch { Console.WriteLine("no Input"); }
             ds.Dispose();
